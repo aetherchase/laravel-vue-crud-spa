@@ -80,7 +80,7 @@
                 console.log(category);
                 axios.post('/api/category', category)
                     .then(response => {
-                        this.fetchCategories();
+                        this.$root.fetchCategories();
                         this.newCategory = '';
                         this.showMessage = false;
                     })
@@ -101,7 +101,7 @@
             deleteCategory(category) {
                 axios.delete('/api/category/' + category.id)
                     .then(()=>{
-                        this.fetchCategories()
+                        this.$root.fetchCategories()
                     });
                 this.$root.fetchCategories();
             },

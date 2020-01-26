@@ -2095,7 +2095,7 @@ __webpack_require__.r(__webpack_exports__);
 
       console.log(category);
       axios.post('/api/category', category).then(function (response) {
-        _this.fetchCategories();
+        _this.$root.fetchCategories();
 
         _this.newCategory = '';
         _this.showMessage = false;
@@ -2118,7 +2118,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this3 = this;
 
       axios["delete"]('/api/category/' + category.id).then(function () {
-        _this3.fetchCategories();
+        _this3.$root.fetchCategories();
       });
       this.$root.fetchCategories();
     },
