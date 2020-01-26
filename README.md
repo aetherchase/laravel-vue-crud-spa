@@ -14,7 +14,7 @@ cp .env.example .env
 php artisan migrate
 ```
 
-#Запуск:
+# Запуск:
 в папке проекта
 
 ```
