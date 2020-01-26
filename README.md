@@ -8,6 +8,7 @@ cd laravel-vue-crud-spa
 composer install
 npm install
 cp .env.example .env
+php artisan key:generate
 ```
 Затем создайте базу данных в папке database и настройте `.env` файл. После запустите миграцию
 ```
